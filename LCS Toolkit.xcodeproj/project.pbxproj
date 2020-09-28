@@ -12,6 +12,7 @@
 		2A2D03A62520BDBE00B1C05A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D03A52520BDBE00B1C05A /* Assets.xcassets */; };
 		2A2D03A92520BDBE00B1C05A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D03A82520BDBE00B1C05A /* Preview Assets.xcassets */; };
 		2A2D03B22520C07200B1C05A /* LeaveRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D03B12520C07200B1C05A /* LeaveRequestView.swift */; };
+		2AA878AE252249A8005770CC /* duringLeave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA878AD252249A8005770CC /* duringLeave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2A2D03A82520BDBE00B1C05A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A2D03AA2520BDBE00B1C05A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A2D03B12520C07200B1C05A /* LeaveRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveRequestView.swift; sourceTree = "<group>"; };
+		2AA878AD252249A8005770CC /* duringLeave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = duringLeave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				2A2D03A52520BDBE00B1C05A /* Assets.xcassets */,
 				2A2D03AA2520BDBE00B1C05A /* Info.plist */,
 				2A2D03B12520C07200B1C05A /* LeaveRequestView.swift */,
+				2AA878AD252249A8005770CC /* duringLeave.swift */,
 				2A2D03A72520BDBE00B1C05A /* Preview Content */,
 			);
 			path = "LCS Toolkit";
@@ -143,6 +146,7 @@
 			files = (
 				2A2D03A42520BDBB00B1C05A /* ContentView.swift in Sources */,
 				2A2D03B22520C07200B1C05A /* LeaveRequestView.swift in Sources */,
+				2AA878AE252249A8005770CC /* duringLeave.swift in Sources */,
 				2A2D03A22520BDBB00B1C05A /* LCS_ToolkitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
