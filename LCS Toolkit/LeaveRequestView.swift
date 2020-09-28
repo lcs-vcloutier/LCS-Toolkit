@@ -9,12 +9,10 @@ import SwiftUI
 //stepper for number of people that displays text box actively
 //improve logic for time of leave - maybe just a im leaving button
 struct LeaveRequestView: View {
-    @State private var checkAmount = ""
     @State private var typeOfLeave = ""
-    @State private var numberOfPeople = 2
-    
-    let numberOfPeoples = [0, 1, 2, 3]
-    
+    @State private var numberOfPeople: Int = 0
+    @State private var time: Int = 0
+    @State private var name = [String]()
 var body: some View {
     NavigationView {
         Form {
@@ -27,17 +25,15 @@ var body: some View {
                     .pickerStyle(SegmentedPickerStyle())
                 }
                 Section(header: Text("Number Of People With you")) {
-                    Picker("Number of People", selection: $numberOfPeople) {
-                            Text("0")
-                            Text("1")
-                            Text("2")
-                            Text("3")
+                    Stepper("\(numberOfPeople)", value: $numberOfPeople, in: 0...3)
+                    for i in $numberOfPeople {            TextField("Who?", text: $name)
+
                         
                     }
-                    .pickerStyle(SegmentedPickerStyle())
-                }
+                    }
+                
                 Section(header: Text("When")) {
-                    Picker("Number of People", selection: $numberOfPeople) {
+                    Picker("Number of People", selection: $time) {
                             Text("1-3")
                             Text("3-5")
                             Text("5-7")
