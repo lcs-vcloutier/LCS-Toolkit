@@ -26,7 +26,11 @@ struct ContentView : View {
                     .background(lightGreyColor)
                     .cornerRadius(5.0)
                     .padding(.bottom, 20)
-                Button("Login", action: {print("Button tapped")})
+                NavigationLink(
+                    destination: LeaveRequestView()) {
+                    Text("Login")
+                }
+                
             }
         .navigationTitle("LCS Toolkit")
         }
