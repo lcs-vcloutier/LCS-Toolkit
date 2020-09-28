@@ -14,23 +14,16 @@ struct ContentView : View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                TextField("Username", text: $username)
-                    .padding()
-                    .background(lightGreyColor)
-                    .cornerRadius(5.0)
-                    .padding(.bottom, 20)
-                SecureField("Password", text: $password)
-                    .padding()
-                    .background(lightGreyColor)
-                    .cornerRadius(5.0)
-                    .padding(.bottom, 20)
+            Form {
+                Section(header: Text("Login")) {
+                    TextField("Username", text: $username)
+                    SecureField("Password", text: $password)
+                    }
                 NavigationLink(
                     destination: LeaveRequestView()) {
                     Text("Login")
                 }
-                
-            }
+                }
         .navigationTitle("LCS Toolkit")
         }
     }

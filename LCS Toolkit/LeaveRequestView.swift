@@ -52,11 +52,6 @@ struct LeaveRequestView: View {
                 destination: duringLeave()) {
                 Text("Go to \(typesOfLeave[typeOfLeave])")
             }
-            //Button(action: {
-                           // activate theme!
-             //              }) {
-            //                   Text("Go to \(typesOfLeave[typeOfLeave])")
-                          // }
         }
         .navigationTitle("Leave Request")
     }
