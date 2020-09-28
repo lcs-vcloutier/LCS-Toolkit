@@ -48,6 +48,15 @@ struct LeaveRequestView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }
+            NavigationLink(
+                destination: duringLeave()) {
+                Text("Go to \(typesOfLeave[typeOfLeave])")
+            }
+            //Button(action: {
+                           // activate theme!
+             //              }) {
+            //                   Text("Go to \(typesOfLeave[typeOfLeave])")
+                          // }
         }
         .navigationTitle("Leave Request")
     }
