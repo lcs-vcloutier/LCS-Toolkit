@@ -15,8 +15,7 @@ struct LeaveRequestView: View {
     @State private var name = ["", "", ""]
     var body: some View {
         
-        NavigationView {
-            Form {
+        Form {
                 Section(header: Text("Type of Leave")) {
                     Picker("Type Of Leave", selection: $typeOfLeave) {
                         Text("Lakefield")
@@ -27,21 +26,23 @@ struct LeaveRequestView: View {
                 }
                 Section(header: Text("Number Of People With you")) {
                     Stepper("\(numberOfPeople)", value: $numberOfPeople, in: 0...3)
+                        .onChange(of: numberOfPeople, perform: { value in
+                            print(name)
+                        })
                     
                     
                 }
                 
                 // Ask for other people
                 if numberOfPeople > 0 {
-                    Section(header: Text("People")) {
-                        ForEach(1..<numberOfPeople) { id in
-                                Text("\(id)")
-                                TextField("blah", text: $name[id])
+                    ForEach(0..<numberOfPeople, id: \.self) { id in
+                        Section(header: Text("Person \(id + 1)")) {
+                            TextField("Enter a name", text: $name[id])
                         }
                     }
                     
                 }
-
+                
                 Section(header: Text("When")) {
                     Picker("Number of People", selection: $time) {
                         Text("1-3")
@@ -58,7 +59,7 @@ struct LeaveRequestView: View {
             }
         }
     }
-}
+
 
 struct LeaveRequestView_Previews: PreviewProvider {
     static var previews: some View {
