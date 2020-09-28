@@ -13,7 +13,7 @@ struct duringLeave: View {
             VStack {
                 
                 NavigationLink(
-                    destination: LeaveRequestView()) {
+                    destination: ContentView()) {
                     Text("Check In")
                 }
                 
