@@ -17,24 +17,30 @@ struct LeaveRequestView: View {
 var body: some View {
     NavigationView {
         Form {
-            Section {
-                TextField("Amount", text: $checkAmount)
-                    .keyboardType(.decimalPad)
-
+            Section(header: Text("Type of Leave")) {
                 Picker("Type Of Leave", selection: $typeOfLeave) {
-                    ForEach(0 ..< 1) {_ in
                         Text("Lakefield")
                         Text("Bridge")
                         Text("Peterborough")
-                    }
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }
             Section(header: Text("Number Of People With you")) {
                 Picker("Number of People", selection: $numberOfPeople) {
-                    ForEach(0 ..< $numberOfPeople.count) {
-                        Text("\(self.numberOfPeople[$0])")
-                    }
+                        Text("0")
+                        Text("1")
+                        Text("2")
+                        Text("3")
+                    
+                }
+                .pickerStyle(SegmentedPickerStyle())
+            }
+            Section(header: Text("When")) {
+                Picker("Number of People", selection: $numberOfPeople) {
+                        Text("1-3")
+                        Text("1")
+                        Text("2")
+                        Text("3")
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }
