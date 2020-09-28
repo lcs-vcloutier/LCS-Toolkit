@@ -38,7 +38,7 @@ var body: some View {
             Section(header: Text("When")) {
                 Picker("Number of People", selection: $numberOfPeople) {
                         Text("1-3")
-                        Text("1")
+                        Text("3-5")
                         Text("2")
                         Text("3")
                 }

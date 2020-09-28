@@ -9,9 +9,20 @@ import SwiftUI
 
 struct duringLeave: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                
+                NavigationLink(
+                    destination: LeaveRequestView()) {
+                    Text("Check In")
+                }
+                
+            }
+        .navigationTitle("During Leave")
+        }
     }
 }
+
 
 struct duringLeave_Previews: PreviewProvider {
     static var previews: some View {
