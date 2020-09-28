@@ -10,7 +10,6 @@ import SwiftUI
 struct duringLeave: View {
     var body: some View {
             VStack {
-                //add a time limit marker --- to do this u need to set a var for time gone and time left
                 NavigationLink(
                     destination: ContentView()) {
                     Text("Check In")
