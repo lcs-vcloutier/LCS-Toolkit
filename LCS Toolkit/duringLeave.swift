@@ -5,7 +5,6 @@
 //  Created by Cloutier, Vincent on 2020-09-28.
 //
 import SwiftUI
-import leaveRequestView.swift
 struct duringLeave: View {
     @State var username: String = ""
     @State var password: String = ""
@@ -18,7 +17,7 @@ struct duringLeave: View {
         Form {
             Section {
                 let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-                Text("\(hoursRemaining) hour(s) \(minutesRemaining) minutes left in \(typeof) ")
+                Text("\(hoursRemaining) hour(s) \(minutesRemaining) minutes left")
                 Text("\(timeRemaining)")
                     .onReceive(timer) { _ in
                         if self.timeRemaining > 0 {
