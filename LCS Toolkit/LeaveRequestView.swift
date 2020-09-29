@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-//stepper for loop that displays text box actively
 //improve logic for time of leave - maybe just a im leaving button
 struct LeaveRequestView: View {
     let typesOfLeave = ["Lakefield", "Bridge", "Peterborough"]

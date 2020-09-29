@@ -4,7 +4,6 @@
 //
 //  Created by Cloutier, Vincent on 2020-09-28.
 //
-
 import SwiftUI
 
 struct duringLeave: View {
@@ -12,9 +11,11 @@ struct duringLeave: View {
     @State var password: String = ""
     @State var currentDate = Date()
     @State var timeRemaining = 7200
-
+    @State var hoursRemaining = 2
+    @State var minutesRemaining = 60
+    @State var secondsRemaining = 60
+    //maybe more efficient way then above variables
     var body: some View {
-        NavigationView {
             Form {
                 Section {
                     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -35,7 +36,7 @@ struct duringLeave: View {
             .navigationTitle("During Leave")
         }
     }
-}
+
 
 
 struct duringLeave_Previews: PreviewProvider {
