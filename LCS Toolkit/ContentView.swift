@@ -17,13 +17,13 @@ struct ContentView : View {
                 Section {
                     TextField("Username", text: $username)
                     SecureField("Password", text: $password)
-                    }
+                }
                 NavigationLink(
                     destination: LeaveRequestView()) {
                     Text("Login")
                 }
-                }
-        .navigationTitle("LCS Toolkit")
+            }
+            .navigationTitle("LCS Toolkit")
         }
     }
 }
