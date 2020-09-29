@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct duringLeave: View {
+    @State var username: String = ""
+    @State var password: String = ""
+    
     var body: some View {
-            VStack {
-                NavigationLink(
-                    destination: ContentView()) {
-                    Text("Check In")
-                }
-                
+        NavigationView {
+            Form {
+                Section {
+                    //timer here
+                    }
+                Button(action: {
+                                // activate theme!
+                                }) {
+                                    Text("Check In")
+                                }
             }
         .navigationTitle("During Leave")
+        }
     }
 }
 
@@ -26,3 +34,6 @@ struct duringLeave_Previews: PreviewProvider {
         duringLeave()
     }
 }
+
+
+
