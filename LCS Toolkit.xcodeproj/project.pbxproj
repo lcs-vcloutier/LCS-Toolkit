@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23676248B4563D61DED12133 /* Pods_LCS_Toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6AC72F7E8378700328A597 /* Pods_LCS_Toolkit.framework */; };
 		2A2D03A22520BDBB00B1C05A /* LCS_ToolkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D03A12520BDBB00B1C05A /* LCS_ToolkitApp.swift */; };
 		2A2D03A42520BDBB00B1C05A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D03A32520BDBB00B1C05A /* ContentView.swift */; };
 		2A2D03A62520BDBE00B1C05A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D03A52520BDBE00B1C05A /* Assets.xcassets */; };
 		2A2D03A92520BDBE00B1C05A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D03A82520BDBE00B1C05A /* Preview Assets.xcassets */; };
 		2A2D03B22520C07200B1C05A /* LeaveRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D03B12520C07200B1C05A /* LeaveRequestView.swift */; };
+		2A6D2A302523C0EC00EBC110 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A6D2A2F2523C0EC00EBC110 /* GoogleService-Info.plist */; };
 		2AA878AE252249A8005770CC /* duringLeave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA878AD252249A8005770CC /* duringLeave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D4967E009A0F79756F89560 /* Pods-LCS Toolkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCS Toolkit.debug.xcconfig"; path = "Target Support Files/Pods-LCS Toolkit/Pods-LCS Toolkit.debug.xcconfig"; sourceTree = "<group>"; };
 		2A2D039E2520BDBB00B1C05A /* LCS Toolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LCS Toolkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2D03A12520BDBB00B1C05A /* LCS_ToolkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCS_ToolkitApp.swift; sourceTree = "<group>"; };
 		2A2D03A32520BDBB00B1C05A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,7 +26,10 @@
 		2A2D03A82520BDBE00B1C05A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A2D03AA2520BDBE00B1C05A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A2D03B12520C07200B1C05A /* LeaveRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveRequestView.swift; sourceTree = "<group>"; };
+		2A6D2A2F2523C0EC00EBC110 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2AA878AD252249A8005770CC /* duringLeave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = duringLeave.swift; sourceTree = "<group>"; };
+		7B6AC72F7E8378700328A597 /* Pods_LCS_Toolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCS_Toolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE382AF7F0711BA9EB8EB3B /* Pods-LCS Toolkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCS Toolkit.release.xcconfig"; path = "Target Support Files/Pods-LCS Toolkit/Pods-LCS Toolkit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23676248B4563D61DED12133 /* Pods_LCS_Toolkit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				2A2D03A02520BDBB00B1C05A /* LCS Toolkit */,
 				2A2D039F2520BDBB00B1C05A /* Products */,
+				BA1CAC87D1B145C8CDE8BA57 /* Pods */,
+				565CEA2673F5C462241AFC78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +71,7 @@
 				2A2D03AA2520BDBE00B1C05A /* Info.plist */,
 				2A2D03B12520C07200B1C05A /* LeaveRequestView.swift */,
 				2AA878AD252249A8005770CC /* duringLeave.swift */,
+				2A6D2A2F2523C0EC00EBC110 /* GoogleService-Info.plist */,
 				2A2D03A72520BDBE00B1C05A /* Preview Content */,
 			);
 			path = "LCS Toolkit";
@@ -75,6 +85,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		565CEA2673F5C462241AFC78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B6AC72F7E8378700328A597 /* Pods_LCS_Toolkit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA1CAC87D1B145C8CDE8BA57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D4967E009A0F79756F89560 /* Pods-LCS Toolkit.debug.xcconfig */,
+				9CE382AF7F0711BA9EB8EB3B /* Pods-LCS Toolkit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A2D03AD2520BDBE00B1C05A /* Build configuration list for PBXNativeTarget "LCS Toolkit" */;
 			buildPhases = (
+				63D3BE6526E8D3254E88D17F /* [CP] Check Pods Manifest.lock */,
 				2A2D039A2520BDBB00B1C05A /* Sources */,
 				2A2D039B2520BDBB00B1C05A /* Frameworks */,
 				2A2D039C2520BDBB00B1C05A /* Resources */,
+				204EB3D8B8942F57D8D324A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,10 +164,53 @@
 			files = (
 				2A2D03A92520BDBE00B1C05A /* Preview Assets.xcassets in Resources */,
 				2A2D03A62520BDBE00B1C05A /* Assets.xcassets in Resources */,
+				2A6D2A302523C0EC00EBC110 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		204EB3D8B8942F57D8D324A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LCS Toolkit/Pods-LCS Toolkit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LCS Toolkit/Pods-LCS Toolkit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LCS Toolkit/Pods-LCS Toolkit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63D3BE6526E8D3254E88D17F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LCS Toolkit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A2D039A2520BDBB00B1C05A /* Sources */ = {
@@ -272,6 +345,7 @@
 		};
 		2A2D03AE2520BDBE00B1C05A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D4967E009A0F79756F89560 /* Pods-LCS Toolkit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +368,7 @@
 		};
 		2A2D03AF2520BDBE00B1C05A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE382AF7F0711BA9EB8EB3B /* Pods-LCS Toolkit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
