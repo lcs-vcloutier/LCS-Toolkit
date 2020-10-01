@@ -23,9 +23,14 @@ struct duringLeave: View {
                         if self.secondsRemaining > 0 {
                             self.secondsRemaining -= 1
                         }
-                        else if self.secondsRemaining == 0 {
+                        else if self.secondsRemaining == 0 && self.minutesRemaining > 0 && self.hoursRemaining > 0 {
                             self.secondsRemaining += 59
                             self.minutesRemaining -= 1
+                        }
+                        else if self.secondsRemaining == 0 && self.minutesRemaining == 0 && self.hoursRemaining > 0 {
+                            self.minutesRemaining += 59
+                            self.secondsRemaining += 59
+                            self.hoursRemaining -= 1
                         }
                     }
             }
