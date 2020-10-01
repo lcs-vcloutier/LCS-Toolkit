@@ -9,14 +9,12 @@ import SwiftUI
 //improve logic for time of leave - maybe just a im leaving button add constraints for leave time
 struct LeaveRequestView: View {
     let typesOfLeave = ["Lakefield", "Bridge", "Peterborough"]
+    //@State private var name : Int = 0
     @State private var typeOfLeave : Int = 0
     @State private var numberOfPeople: Int = 0
     @State private var time: Int = 0
     @State private var name = ["", "", ""]
-    @State private var wakeUp = Date()
-    @State private var reserveATime : Bool = false
     var body: some View {
-        
         Form {
             Section(header: Text("Type of Leave")) {
                 Picker("Type Of Leave", selection: $typeOfLeave) {
@@ -34,18 +32,16 @@ struct LeaveRequestView: View {
                 // Ask for other people
                 if numberOfPeople > 0 {
                     ForEach(0..<numberOfPeople, id: \.self) { id in
-                        TextField("Person \(id + 1)", text: $name[id])
+                        Picker("Person \(id + 1)", selection: $name+1){
+                            ForEach(2 ..< 350) {
+                                Text("\($0) people")
+                                                }
+                                            }
                     }
                 }
             }
             
-            Section(header: Text("When")) {
-                Toggle("Reserve a time", isOn: $reserveATime) {
-                    DatePicker("From", selection: $wakeUp)
-                    DatePicker("To", selection: $wakeUp)
-                }
                 
-            }
             NavigationLink(
                 destination: duringLeave()) {
                 Text("Go to \(typesOfLeave[typeOfLeave])")
