@@ -12,16 +12,20 @@ struct duringLeave: View {
     @State var timeRemaining = 7200
     @State var hoursRemaining = 1
     @State var minutesRemaining = 59
+    @State var secondsRemaining = 59
     //maybe more efficient way xthen above variables
     var body: some View {
         Form {
             Section {
                 let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-                Text("\(hoursRemaining) hour(s) \(minutesRemaining) minutes left")
-                Text("\(timeRemaining)")
+                Text("\(hoursRemaining) hour(s) \(minutesRemaining) minutes & \(secondsRemaining) seconds left")
                     .onReceive(timer) { _ in
-                        if self.timeRemaining > 0 {
-                            self.timeRemaining -= 1
+                        if self.secondsRemaining > 0 {
+                            self.secondsRemaining -= 1
+                        }
+                        else if self.secondsRemaining == 0 {
+                            self.secondsRemaining += 59
+                            self.minutesRemaining -= 1
                         }
                     }
             }
