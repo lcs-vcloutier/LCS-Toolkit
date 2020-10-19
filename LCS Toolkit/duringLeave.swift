@@ -35,7 +35,7 @@ struct duringLeave: View {
                     }
             }
             Button(action: {
-                // activate theme!
+                // check location if its okay send time to database saying your home, if not dont say anything
             }) {
                 Text("Check In")
             }

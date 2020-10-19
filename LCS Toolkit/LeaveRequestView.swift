@@ -7,14 +7,18 @@
 
 import SwiftUI
 //improve logic for time of leave - maybe just a im leaving button add constraints for leave time
+
+
 struct LeaveRequestView: View {
     let typesOfLeave = ["Lakefield", "Bridge", "Peterborough"]
-    let namelist = Set(["Tlarson", "Jharris", "Acastro"])
+    let nameList = ["Tlarson", "Jharris", "Acastro"]
     @State private var typeOfLeave : Int = 0
     @State private var numberOfPeople: Int = 0
-    @State private var name = ["", "", ""]
+    @State private var nameInput = ["", "", ""]
+    //let difference = nameInput.difference(from: nameList)
+    
+    
     var body: some View {
-        
         Form {
             Section(header: Text("Type of Leave")) {
                 Picker("Type Of Leave", selection: $typeOfLeave) {
@@ -27,18 +31,18 @@ struct LeaveRequestView: View {
             Section(header: Text("Number Of People With you")) {
                 Stepper("\(numberOfPeople)", value: $numberOfPeople, in: 0...3)
                     .onChange(of: numberOfPeople, perform: { value in
-                        print(name)
+                        print(nameInput)
                     })
                 // Ask for other people
                 if numberOfPeople > 0 {
                     ForEach(0..<numberOfPeople, id: \.self) { id in
-                        TextField("Person \(id + 1)", text: $name[id])
+                        TextField("Person \(id + 1)", text: $nameInput[id])
                     }
                 }
             }
             
             //Button(if statement here)
-            //if name == namelist{}
+            //Text("\(nameInput.symmetricDifference(nameList))")
             NavigationLink(
                 destination: duringLeave()) {
                 Text("Go to \(typesOfLeave[typeOfLeave])")
@@ -46,7 +50,6 @@ struct LeaveRequestView: View {
         }
         .navigationTitle("Leave Request")
     }
-    
 }
 
 

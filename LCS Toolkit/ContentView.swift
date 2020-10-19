@@ -22,6 +22,7 @@ struct ContentView : View {
                     destination: LeaveRequestView()) {
                     Text("Login")
                 }
+                .disabled(username.isEmpty || password.isEmpty)
             }
             .navigationTitle("LCS Toolkit")
         }
